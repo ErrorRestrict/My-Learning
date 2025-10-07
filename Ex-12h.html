@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+</head>
+
+<body>
+    <button onclick="MyFunc()" class="btn">Add</button>
+    <button onclick="MyFunc1()" class="btn2">Remove</button>
+</body>
+<script>
+    let msg = 0;
+    
+
+    function MyFunc(){
+        msg++;
+    }
+
+    function MyFunc1(){
+        msg--;
+    }
+
+    setInterval(()=>{
+        if(document.title === 'App'){
+            document.title =   ` (${msg}) New Messages `;
+        }
+        else{
+            document.title = 'App'
+        }
+    })
+
+
+</script>
+
+</html>

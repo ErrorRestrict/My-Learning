@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Myfunc()" class="btn"> Ad to cart</button>
+    <p class="msg"></p>
+
+    <script>
+        function Myfunc(){
+            const btn = document.querySelector('.btn');
+            const msg = document.querySelector('.msg');
+            msg.innerHTML = "Added";
+            setTimeout(()=>{
+                msg.innerHTML="";
+            },2000)
+        }
+    </script>
+</body>
+</html>
